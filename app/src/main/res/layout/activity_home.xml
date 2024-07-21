@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffe0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#6B6805"
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TerraMaster"
+        android:textSize="50sp"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:textColor="#6B6805"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:id="@+id/head"
+        android:text="Expert List"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ListView
+        android:layout_below="@+id/head"
+        android:id="@+id/expertlist"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/addexpert"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/expertlist"
+        android:layout_marginTop="5dp"
+        android:text="Add Expert"
+        />
+
+    <Button
+        android:layout_marginStart="150dp"
+        android:layout_toEndOf="@id/head"
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:layout_below="@id/header"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

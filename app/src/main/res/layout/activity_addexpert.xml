@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffe0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#6B6805"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:text="Add Expert"
+        android:layout_marginTop="40dp"
+        android:id="@+id/header"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/header"
+        android:id="@+id/fullnameEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:inputType="text"/>
+
+    <EditText
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fullnameEditText"
+        android:id="@+id/specialtyEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Specialty"
+        android:inputType="text"/>
+
+    <EditText
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/specialtyEditText"
+        android:id="@+id/introductionEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Introduction"
+        android:inputType="textMultiLine"/>
+
+    <EditText
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/introductionEditText"
+        android:id="@+id/pricerangeEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Price Range"
+        android:inputType="text"/>
+
+    <EditText
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pricerangeEditText"
+        android:id="@+id/locationEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:inputType="text"/>
+
+    <EditText
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/locationEditText"
+        android:id="@+id/proposalsdoneEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Proposals Done"
+        android:inputType="number"/>
+
+    <Button
+        android:textColor="@color/white"
+        android:background="#C7CA7C"
+        android:fontFamily="serif"
+        android:layout_below="@+id/proposalsdoneEditText"
+        android:id="@+id/saveButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
